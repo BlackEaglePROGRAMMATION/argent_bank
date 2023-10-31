@@ -18,14 +18,14 @@ header nav {
 }
 
 header .hover-effect {
-    column-gap: 5px;   
+    column-gap: 5px;
 }
 
 header nav a,
 header nav button {
     display: flex;
     align-items: center;
-    
+
     font-size: 16px;
     font-weight: bold;
     color: #2c3e50;
@@ -33,4 +33,16 @@ header nav button {
 
 header .hover-effect:hover {
     opacity: .7;
+}
+
+@media screen and (max-width: 768px) {
+    header nav a span,
+    header nav button span {
+        display: none;
+    }
+
+    header nav a i,
+    header nav button i {
+        font-size: 28px;
+    }
 }

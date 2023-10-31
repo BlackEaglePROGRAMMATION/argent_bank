@@ -55,3 +55,10 @@
     border-left: #0a7850 2px solid;
     opacity: .9;
 }
+
+@media screen and (max-width: 768px) {
+    .ul-accounts button {
+        position: initial;
+        margin: 40px auto 0;
+    }
+}

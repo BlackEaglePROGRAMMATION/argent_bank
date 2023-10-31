@@ -26,10 +26,10 @@ function Header() {
                     className={isConnected ? 'hover-effect' : ''}
                 >
                     <i className='fas fa-circle-user'></i>
-                    {isConnected && profile.userName}
+                    <span>{isConnected && profile.userName}</span>
                 </Link>
                 
-                {!isConnected && <Link to='/sign-in'>Sign In</Link>}
+                {!isConnected && <Link to='/sign-in'><span>Sign In</span></Link>}
 
                 {isConnected && 
                     <button 
@@ -37,7 +37,7 @@ function Header() {
                         onClick={() => dispatch(deleteProfil())}
                     >
                         <i className="fas fa-right-from-bracket"></i>
-                        Sign Out
+                        <span>Sign Out</span>
                     </button>
                 } 
             </nav>
